@@ -1,5 +1,23 @@
+.container {
+        display: flex;
+        justify-content: space-between;
+}
+
+.paragraphe-1,
+.paragraphe-2,
+.paragraphe-3 {
+    background-color: gray;
+    text-align: center;
+}
+
 .logo-footer {
-    height: 80px;
-    width: 80px;
-    
+    position: relative;
+    right: 50px;
+    height: 55px;
+    width: 55px;
+}
+
+a {
+    position: relative;
+    left: 50px;
 }
