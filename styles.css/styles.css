@@ -2,3 +2,32 @@
     color: #000;
   }
 
+.abt-us{
+    background-color: rgba(220, 220, 220, 0.3);
+    text-align :center;
+    padding: 15px;
+    margin-left: 45%;
+    margin-right: 45%;
+    margin-top: 10px;
+}
+
+.about-us-body{
+  background-image: url(https://images.nexusmods.com/mod-headers/804/686.jpg) ;
+  background-size: cover;
+  background-attachment: fixed;
+  
+
+}
+
+.quote{
+  color: red;
+}
+
+.about-game{
+  margin: 20px auto;
+}
+
+.btn-custom{
+  background-color: gray;
+  color: white;
+}
