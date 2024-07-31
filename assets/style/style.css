@@ -10,6 +10,22 @@
     text-align: center;
 }
 
+.dd-combat,
+.stress-fail,
+.dd-hamlet,
+.dd-recuits,
+.dd-shop {
+    width:  600px;
+    height: 300px;
+}
+.Crusader,
+.HighwayMan,
+.Vestal,
+.PlagueDoctor {
+    width:  10%;
+    height: 10%;
+}
+
 .logo-footer {
     position: relative;
     right: 50px;
