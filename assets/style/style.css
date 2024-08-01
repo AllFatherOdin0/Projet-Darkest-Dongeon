@@ -47,6 +47,10 @@ h1 {
     width: 55px;
 }
 
+.more-content {
+    display: none;
+}
+
 a {
     position: relative;
     left: 50px;
