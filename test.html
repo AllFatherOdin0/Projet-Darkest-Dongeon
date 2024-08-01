@@ -1,11 +1,57 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test</title>
+    <title>Lire la suite avec Bootstrap</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .more-content {
+            display: none;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container mt-4">
+        <div class="content">
+            <p>
+                L'une des principales composantes de Darkest Dungeon est le système de stress, qui représente la peur
+                ressentie par le héros alors qu'il parcourt le donjon. Chaque héros a une barre de stress qui se remplit
+                au fur et à mesure d’événements négatifs : attaque d'un ennemi, piège déclenché lors de l'exploration
+                dans l'obscurité, etc. Subir un coup critique augmente davantage le stress et certaines attaques
+                spéciales ennemies augmentent uniquement le stress.
+                <span class="more-content">
+                    Lorsque cette barre de stress est remplie, le héros
+                    est frappé d'une « affliction ». Celle-ci va modifier son comportement en tenant moins compte des ordres
+                    du joueur (par exemple, un héros va refuser de se soigner, va attaquer l'ennemi sans que le joueur ne
+                    lui en ait donné l'ordre, volera certains trésors, etc.). Il existe cependant une petite chance que le
+                    héros ne soit pas touché par une affliction et gagne au contraire un bonus.
+
+                    Si la barre de stress se remplit une deuxième fois, le héros peut faire une crise cardiaque ce qui le
+                    rend extrêmement vulnérable aux attaques ennemies. En cas de seconde crise cardiaque, si le héros n'a
+                    pas été soigné des conséquences de la première, il meurt.
+                </span>
+            </p>
+            <button id="toggleButton" class="btn btn-link p-0">Lire la suite</button>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies (jQuery and Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('toggleButton').addEventListener('click', function() {
+            var moreContent = document.querySelector('.more-content');
+            if (moreContent.style.display === 'none' || moreContent.style.display === '') {
+                moreContent.style.display = 'inline';
+                this.textContent = 'Réduire';
+            } else {
+                moreContent.style.display = 'none';
+                this.textContent = 'Lire la suite';
+            }
+        });
+    </script>
 </body>
 </html>
