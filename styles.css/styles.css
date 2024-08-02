@@ -31,3 +31,18 @@
   background-color: gray;
   color: white;
 }
+
+.carousel-inner {
+  background-color: gray;
+}
+
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item img {
+  max-width: 50%;
+  height: auto;
+}
