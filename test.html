@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lire la suite avec Bootstrap</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
         .more-content {
             display: none;
         }
     </style>
 </head>
-
 <body>
     <div class="container mt-4">
         <div class="content">
@@ -27,70 +23,49 @@
                 spéciales ennemies augmentent uniquement le stress.
                 <span class="more-content">
                     Lorsque cette barre de stress est remplie, le héros
-                    est frappé d'une « affliction ». Celle-ci va modifier son comportement en tenant moins compte des
-                    ordres
-                    du joueur (par exemple, un héros va refuser de se soigner, va attaquer l'ennemi sans que le joueur
-                    ne
-                    lui en ait donné l'ordre, volera certains trésors, etc.). Il existe cependant une petite chance que
-                    le
+                    est frappé d'une « affliction ». Celle-ci va modifier son comportement en tenant moins compte des ordres
+                    du joueur (par exemple, un héros va refuser de se soigner, va attaquer l'ennemi sans que le joueur ne
+                    lui en ait donné l'ordre, volera certains trésors, etc.). Il existe cependant une petite chance que le
                     héros ne soit pas touché par une affliction et gagne au contraire un bonus.
 
-                    Si la barre de stress se remplit une deuxième fois, le héros peut faire une crise cardiaque ce qui
-                    le
-                    rend extrêmement vulnérable aux attaques ennemies. En cas de seconde crise cardiaque, si le héros
-                    n'a
+                    Si la barre de stress se remplit une deuxième fois, le héros peut faire une crise cardiaque ce qui le
+                    rend extrêmement vulnérable aux attaques ennemies. En cas de seconde crise cardiaque, si le héros n'a
                     pas été soigné des conséquences de la première, il meurt.
                 </span>
             </p>
-            <button id="toggleButton" class="btn btn-link p-0">Lire la suite</button>
+            <button class="toggleButton btn btn-link p-0">Lire la suite</button>
         </div>
 
         <div class="content">
             <p>
-                L'une des principales composantes de Darkest Dungeon est le système de stress, qui représente la peur
-                ressentie par le héros alors qu'il parcourt le donjon. Chaque héros a une barre de stress qui se remplit
-                au fur et à mesure d’événements négatifs : attaque d'un ennemi, piège déclenché lors de l'exploration
-                dans l'obscurité, etc. Subir un coup critique augmente davantage le stress et certaines attaques
-                spéciales ennemies augmentent uniquement le stress.
+                Voici un autre exemple de paragraphe avec un texte initial et un contenu caché. Vous pouvez ajouter autant
+                de ces sections que vous le souhaitez.
                 <span class="more-content">
-                    Lorsque cette barre de stress est remplie, le héros
-                    est frappé d'une « affliction ». Celle-ci va modifier son comportement en tenant moins compte des
-                    ordres
-                    du joueur (par exemple, un héros va refuser de se soigner, va attaquer l'ennemi sans que le joueur
-                    ne
-                    lui en ait donné l'ordre, volera certains trésors, etc.). Il existe cependant une petite chance que
-                    le
-                    héros ne soit pas touché par une affliction et gagne au contraire un bonus.
-
-                    Si la barre de stress se remplit une deuxième fois, le héros peut faire une crise cardiaque ce qui
-                    le
-                    rend extrêmement vulnérable aux attaques ennemies. En cas de seconde crise cardiaque, si le héros
-                    n'a
-                    pas été soigné des conséquences de la première, il meurt.
+                    Voici le texte caché pour cet exemple de paragraphe. Vous pouvez répéter cette structure pour chaque
+                    paragraphe que vous souhaitez avoir avec une option "Lire la suite".
                 </span>
             </p>
-            <button id="toggleButton" class="btn btn-link p-0">Lire la suite</button>
+            <button class="toggleButton btn btn-link p-0">Lire la suite</button>
         </div>
     </div>
 
     <!-- Bootstrap JS and dependencies (jQuery and Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
-        document.getElementById('toggleButton').addEventListener('click', function () {
-            var moreContent = document.querySelector('.more-content');
-            if (moreContent.style.display === 'none' || moreContent.style.display === '') {
-                moreContent.style.display = 'inline';
-                this.textContent = 'Réduire';
-            } else {
-                moreContent.style.display = 'none';
-                this.textContent = 'Lire la suite';
-            }
+        document.querySelectorAll('.toggleButton').forEach(button => {
+            button.addEventListener('click', function() {
+                const moreContent = this.previousElementSibling.querySelector('.more-content');
+                if (moreContent.style.display === 'none' || moreContent.style.display === '') {
+                    moreContent.style.display = 'inline';
+                    this.textContent = 'Réduire';
+                } else {
+                    moreContent.style.display = 'none';
+                    this.textContent = 'Lire la suite';
+                }
+            });
         });
     </script>
 </body>
-
 </html>

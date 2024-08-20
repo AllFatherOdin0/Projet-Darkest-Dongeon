@@ -55,3 +55,31 @@ a {
     position: relative;
     left: 50px;
 }
+
+
+@media screen and (max-width :768px) {
+
+    .dd {
+        width:  40%;
+        height: 40%;
+    }
+
+    .dd-combat,
+    .stress-fail,
+    .dd-hamlet,
+    .dd-recuits,
+    .dd-shop {
+        width:  400px;
+        height: 200px;
+    }
+
+    .Crusader,
+    .HighwayMan,
+    .Vestal,
+    .PlagueDoctor {
+        width:  30%;
+        height: 30%;
+    }
+   
+
+}
