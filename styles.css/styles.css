@@ -19,40 +19,88 @@
 
 }
 
+#background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/img/background-ruins.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+  
+ 
+}
+
+
 .quote{
   color: red;
 }
 
-.about-game{
-  margin: 20px auto;
+.about-game {
+  width: 48rem; 
+  height: 75%;
+  margin: 50px auto; 
+  padding: 20px; 
 }
 
-.btn-custom{
-  background-color: gray;
-  color: white;
-}
-
-.carousel-inner {
-  background-color: gray;
-}
-
-.carousel-item {
+.card-body {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center; 
+  
+}
+
+.card-img-top {
+  width: 100%; 
+  height: auto; 
+  max-height: 500px; 
+  object-fit: contain; 
+}
+
+.btn-custom {
+  display: inline-block;
+  background-color: #333; 
+  color: white; 
+  border-radius: 5px; 
+  padding: 10px 20px; 
+  margin-top: 10px; 
+}
+
+.btn-custom:hover {
+  background-color: #555; 
+}
+.carousel-item {
+  height: 500px; 
 }
 
 .carousel-item img {
-  max-width: 50%;
-  height: auto;
+  height: 100%;
+  width: 100%;
+  object-fit: cover; 
 }
 
-.carousel-caption {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
+.carousel {
+  margin-top : 50px;
+}
+
+
+#carte-AboutUs{
+  margin-top: 100px;
+  padding: 0;
+  
+  
+}
+
+#carte-AboutUs .card-img-top {
+  margin-top: 100px;
+  width: 100%; 
+  height: 1000px; 
+  object-fit: contain;
+  
+}
+#carte-AboutUs .card-body {
+  text-align: center; 
 }
