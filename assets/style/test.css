@@ -1,0 +1,29 @@
+/* styles.css */
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+.toggle {
+    display: none;
+}
+
+.toggle-label {
+    display: inline-block;
+    color: blue;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.more {
+    display: none;
+}
+
+.toggle:checked + .toggle-label + .content .more {
+    display: inline;
+}
+
+.toggle:checked + .toggle-label {
+    display: none;
+}

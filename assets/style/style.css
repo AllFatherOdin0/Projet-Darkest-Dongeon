@@ -1,3 +1,11 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
 .container {
         display: flex;
         justify-content: space-between;
@@ -10,6 +18,28 @@
     text-align: center;
 }
 
+.dd {
+    width:  20%;
+    height: 20%;
+}
+
+
+.dd-combat,
+.stress-fail,
+.dd-hamlet,
+.dd-recuits,
+.dd-shop {
+    width:  600px;
+    height: 300px;
+}
+.Crusader,
+.HighwayMan,
+.Vestal,
+.PlagueDoctor {
+    width:  10%;
+    height: 10%;
+}
+
 .logo-footer {
     position: relative;
     right: 50px;
@@ -17,7 +47,39 @@
     width: 55px;
 }
 
+.more-content {
+    display: none;
+}
+
 a {
     position: relative;
     left: 50px;
+}
+
+
+@media screen and (max-width :768px) {
+
+    .dd {
+        width:  40%;
+        height: 40%;
+    }
+
+    .dd-combat,
+    .stress-fail,
+    .dd-hamlet,
+    .dd-recuits,
+    .dd-shop {
+        width:  400px;
+        height: 200px;
+    }
+
+    .Crusader,
+    .HighwayMan,
+    .Vestal,
+    .PlagueDoctor {
+        width:  30%;
+        height: 30%;
+    }
+   
+
 }
