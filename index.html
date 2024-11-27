@@ -14,9 +14,210 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js"></script>
+
 </head>
 <body>
-    
+  <nav class="navbar navbar-expand-lg fixed-top bg-light navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#"
+        ><img
+          id="RH-logo"
+          src="assets/img/redhook_logo+copy (1).jpg"
+          alt="logo"
+          draggable="false"
+          height="100"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="#!"><i class="fas fa-plus-circle pe-2"></i>Notre jeu </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="aboutus.html"><i class="fas fa-bell pe-2"></i>A propos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="#!"><i class="fas fa-heart pe-2"></i>????</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="btn btn-black btn-rounded" href="#!">Se connecter</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="assets/img/hamletloading.jpg" class="d-block w-100" alt="Image 1">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Un univers sombre et captivant</h1>  
+              <p>Plongez dans un monde lugubre et mystérieux où chaque recoin cache des dangers et des secrets. Darkest Dungeon vous invite à explorer des environnements menaçants où l'ombre est votre constante compagne</p>
+
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="assets/img/strats2.jpg" class="d-block w-100" alt="Image 2">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Une Stratégie Délicate</h1>  
+              <p>Maîtrisez les mécanismes complexes de gestion de vos héros et de leurs ressources. Chaque décision compte, chaque combat est un défi, et chaque erreur peut être fatale. Préparez-vous à affronter la pression constante de l'incertitude.</p> 
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="assets/img/fullcastcircus.jpg" class="d-block w-100" alt="Image 3">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Des personnages uniques</h1>  
+              <p>Choisissez parmi une variété de héros avec des compétences distinctes et des classes variées. Chaque personnage a ses propres forces et faiblesses, vous devrez donc former des équipes équilibrées pour affronter les ténèbres.</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<div class="card about-game">
+  <img src="assets/img/darkestdungeontitle.jpg" class="card-img-top" alt="Darkest Dungeon Logo">
+  <div class="card-body">
+    <h5 class="card-title">Découvrez Darkest Dungeon</h5>
+    <p class="card-text">Plongez dans l'univers fascinant de Darkest Dungeon, un jeu de rôle où gérer le stress et les ressources est tout aussi important que le combat. Explorez des donjons mystérieux, affrontez des créatures redoutables, et formez une équipe de héros pour repousser les ténèbres qui menacent votre ville. Avec ses graphismes uniques, son gameplay stratégique, et une atmosphère immersive, ce jeu est un véritable défi à découvrir.</p>
+    <a href="" class="btn btn-custom">Voir plus</a>
+    <a href="" class="btn btn-custom">Acheter maintenant!</a>
+  </div>
+</div>
+
+
+<div id="update1" class="row">
+  <div class="col-md-6 mb-3">
+      <div class="card d-flex flex-row" style="height: 100%;">
+          <img src="assets/img/The_Shieldbreaker.jpg" class="img-fluid" style="width: 400px; height: 400px; object-fit: cover;">
+          <div class="card-body d-flex flex-column justify-content-center">
+              <h5 class="card-title">Shieldbreaker Update</h5>
+              <p class="card-text">Le DLC Shieldbreaker pour Darkest Dungeon introduit une nouvelle héroïne, la Brise-boucliers, spécialisée dans le perçage d'armures et les attaques percutantes. Vous devrez maîtriser ses compétences uniques tout en affrontant de nouveaux ennemis et en survivant à des visions cauchemardesques qui ajoutent un défi supplémentaire au jeu. Ce contenu enrichit vos stratégies en ajoutant une nouvelle dimension au combat.</p>
+          </div>
+      </div>
+  </div>
+  <div id="update2" class="col-md-6 mb-3">
+      <div class="card d-flex flex-row" style="height: 100%;">
+          <img src="assets/img/flagellant.jpg" class="img-fluid" style="width: 400px; height: 400px; object-fit: cover;">
+          <div class="card-body d-flex flex-column justify-content-center">
+              <h5 class="card-title">Crimson Court Update</h5>
+              <p class="card-text">Le DLC Crimson Court pour Darkest Dungeon introduit une nouvelle campagne où une malédiction vampirique peut infecter vos héros. Vous explorez la "Cour Pourpre", un nouvel environnement rempli de créatures assoiffées de sang, tout en gérant la malédiction qui complique encore davantage votre partie. Ce contenu rend le jeu encore plus difficile et intense.</p>
+          </div>
+      </div>
+  </div>
+</div>
+
+  <!--
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="assets/img/background-ruins.jpg" class="d-block w-100" alt="Image 1">
+              <div class="carousel-caption d-none d-md-block">
+                  <p>Description de l'image 1</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="assets/img/Question_mark_(black).svg.png" class="d-block w-100" alt="Image 2">
+              <div class="carousel-caption d-none d-md-block">
+                  <p>Description de l'image 2</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="assets/img/DD2-KeyArt-Landscape-1200x675.jpg" class="d-block w-100" alt="Image 3">
+              <div class="carousel-caption d-none d-md-block">
+                  <p>Description de l'image 3</p>
+              </div>
+          </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+      </button>
+  </div>
+
+  -->
+  
+  <div class="container-fluid p-0">
+    <div id="carte-AboutUs" class="card">
+      <img src="assets/img/redhook_logo+copy.jpg" class="card-img-top" alt="Red Hook Studio">
+      <div class="card-body">
+        <h5 class="card-title">À Propos de Red Hook</h5>
+        <p class="card-text">Red Hook Studios est le créateur de *Darkest Dungeon*, connu pour ses jeux au gameplay stratégique et immersif. Fondé en 2013, le studio a rapidement gagné en notoriété avec ses créations uniques.</p>
+        <a href="aboutus.html" class="btn btn-custom">Voir plus</a>
+      </div>
+    </div>
+  </div>
+  
+  
+
+    <div id="carouselMerch" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="assets/img/merch1.jpg" class="d-block w-100" alt="Image 1">
+              <div class="carousel-caption d-none d-md-block">
+                  <p>Merch 1</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="assets/img/merch2.jpg" class="d-block w-100" alt="Image 2">
+              <div class="carousel-caption d-none d-md-block">
+                  <p>Merch 2</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="assets/img/merch3.jpg" class="d-block w-100" alt="Image 3">
+              <div class="carousel-caption d-none d-md-block">
+                  <p>Merch 3</p>
+              </div>
+          </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+      </button>
+  </div>
 
 <footer class="text-center text-white"  style="background-color:#00000078;">
         
