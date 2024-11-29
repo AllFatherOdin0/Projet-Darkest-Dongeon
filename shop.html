@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darkest Dungeon - Boutique</title>
+
+    <link href="/assets/style/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js"></script>
+    <script>
+        function buyItem(itemName) {
+            alert(`Vous avez ajouté "${itemName}" à votre panier !`);
+        }
+    </script>
+
+</head>
+<body class="about-us-body">
+  <nav class="navbar navbar-expand-lg fixed-top bg-light navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"
+        ><img
+          id="RH-logo"
+          src="assets/img/redhook_logo+copy (1).jpg"
+          alt="logo"
+          draggable="false"
+          height="100"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="présentation.html"><i class="fas fa-plus-circle pe-2"></i>Notre jeu </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="aboutus.html"><i class="fas fa-bell pe-2"></i>A propos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="shop.html"><i class="fa-solid fa-cart-shopping"></i>La boutique</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="btn btn-black btn-rounded" href="login.html">Se connecter</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <br><br><br><br><br><br>
+
+  <div class="card-body">
+    <div class="product">
+        <img src="assets\img\DarkestDungeonGame.jpg" alt="Darkest Dungeon">
+        <h3>Darkest Dungeon</h3>
+        <p></p>
+        <p class="price">24,50 €</p>
+        <button onclick="buyItem('Darkest Dungeon')">Acheter</button>
+    </div>
+
+    <div class="product">
+        <img src="assets\img\DarkestDungeonTheCrimsonCourt.jpg" alt="Crimson Count">
+        <h3>The Crimson Count</h3>
+        <p></p>
+        <p class="price">9,75 €</p>
+        <button onclick="buyItem('The Crimson Count')">Acheter</button>
+    </div>
+
+    <div class="product">
+        <img src="assets\img\DarkestDungeonTheColorofMadness.jpg" alt="Color Of Madness">
+        <h3>The Color Of Madness</h3>
+        <p></p>
+        <p class="price">4,99 €</p>
+        <button onclick="buyItem('The Color Of Madness')">Acheter</button>
+    </div>
+
+    <div class="product">
+        <img src="assets\img\DarkestDungeonShieldbreakerDLC.jpg" alt="The Shieldbreaker">
+        <h3>The Shieldbreaker</h3>
+        <p></p>
+        <p class="price">3,99 € </p>
+        <button onclick="buyItem('The Shieldbreaker')">Acheter</button>
+    </div>
+
+    <div class="product">
+        <img src="assets\img\BoardGarme.jpg" alt="le jeu de plateau">
+        <h3>Darkest Dungeon: le jeu de plateau</h3>
+        <p></p>
+        <p class="price">90,00 €</p>
+        <button onclick="buyItem('Darkest Dungeon: le jeu de plateau')">Acheter</button>
+    </div>
+    <div class="product">
+      <img src="assets\img\merch2.jpg" alt="T-shirt">
+      <h3>T-shirt Darkest Dungeon</h3>
+      <p></p>
+      <p class="price">15,00 €</p>
+      <button onclick="buyItem('T-shirt Darkest Dungeon')">Acheter</button>
+  </div>
+  </div>
+
+<footer class="text-center text-white"  style="background-color:#00000078;">
+        
+  <div class="container d-flex justify-content-center py-4">
+
+    <img class="logo-footer" src="/assets/img/logo DD.png">
+
+      <p></p>
+      <a type="button" class="mx-2">
+        <img src="/assets/img/facebook.svg">
+      </a>
+
+      <a type="button" class="mx-2">
+        <img src="/assets/img/instagram.svg">
+      </a>
+
+      <a type="button" class="mx-2">
+        <img src="/assets/img/twitter.svg">
+      </a>
+
+      <a type="button" class="mx-2">
+        <img src="/assets/img/github.svg">
+      </a>
+  </div>
+      
+    <div class="text-center text-white py-2" style="background-color:#000;">
+      © 2024 Copyright:
+    <p class="text-white" href="https://mdbootstrap.com/">Darkest Dungeon</p>
+    </div>
+</footer>
+      
+</body>
+</html>
